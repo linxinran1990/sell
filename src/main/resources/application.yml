@@ -1,5 +1,5 @@
 #logging.pattern.console="%d-%msg%n"
-#logging.file="D:\STUDY\Spring BootÆóÒµÎ¢ÐÅµã²ÍÏµÍ³\µÚÈýÕÂ\log.log"
+#logging.file="D:\STUDY\Spring Bootï¿½ï¿½ÒµÎ¢ï¿½Åµï¿½ï¿½ÏµÍ³\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\log.log"
 spring:
     datasource:
       driver-class-name: com.mysql.jdbc.Driver
@@ -8,6 +8,14 @@ spring:
       url: jdbc:mysql://192.168.3.14/sell?characterEncoding=utf-8&useSSL=false
     jpa:
         show-sql: true
-
+    jackson:
+      default-property-inclusion: non_null
 server:
   context-path: /sell
+wechat:
+  mpAppId: wx1bd462a40f446c7e
+  mpAppSecret: 7079e86044db0e839245774c2378f327
+  mchId: 1525190581
+  mchKey: jB0Gv8Y85tJV9BVq
+  keyPath:
+  notifyUrl: http://linxinran.natapp1.cc/sell/pay/notify
